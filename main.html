@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example of NIR architecture</title>
+    <link rel ="stylesheet" href = "main.css">
+</head>
+<body>
+<div class="container">
+    <hr/>
+    <h4>Upload image to style</h4>
+    <form id="form" method="post">
+        <input type="file" id="image-input-to-style" accept="image/jpeg, image/png, image/jpg">
+        <div id="display-image-to-style"></div>
+        <hr/>
+        <h4>Upload style image</h4>
+        <input type="file" id="image-input-style" accept="image/jpeg, image/png, image/jpg">
+        <div id="display-image-style"></div>
+        <button id="submit">
+            Отправить
+        </button>
+    </form>
+    <hr/>
+    <div class="output">
+        <div class="output__item">
+            <h3 class="output__item__title">
+                500 - итераций
+            </h3>
+            <img src="/VGG-19/output/output-500.png" alt="">
+        </div>
+        <div class="output__item">
+            <h3 class="output__item__title">
+                1000 - итераций
+            </h3>
+            <img src="/VGG-19/output/output-1000.png" alt="">
+        </div>
+        <div class="output__item">
+            <h3 class="output__item__title">
+                1500 - итераций
+            </h3>
+            <img src="/VGG-19/output/output-1500.png" alt="">
+        </div>
+        <div class="output__item">
+            <h3 class="output__item__title">
+                2000 - итераций
+            </h3>
+            <img src="/VGG-19/output/output-2000.png" alt="">
+        </div>
+    </div>
+    <h4>Output style image</h4>
+    <div id="image-output-style" ></div>
+    <div id="display-image-output-style"></div>
+    <hr/>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js" ></script>
+</body>
+</html>
